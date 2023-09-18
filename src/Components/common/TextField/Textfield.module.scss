@@ -1,0 +1,25 @@
+.root {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: var(--input-height);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0 20px;
+  font-size: var(--font-l);
+}
+
+.search {
+  width: calc((var(--input-height) / 100) * 80);
+  height: calc((var(--input-height) / 100) * 80);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+
+  transform: translateY(-50%);
+}

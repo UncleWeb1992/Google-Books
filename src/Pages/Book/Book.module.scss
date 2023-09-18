@@ -1,0 +1,58 @@
+@import "styles/mixins";
+
+.book {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  & img {
+    width: calc(var(--index) * 15);
+    max-width: 80%;
+    height: calc(var(--index) * 20);
+
+    box-shadow: 9px 3px 12px 0px #2c2c2c9a;
+
+    @include MobieXl {
+      width: calc(var(--index) * 8);
+      max-width: 80%;
+      height: calc(var(--index) * 10);
+    }
+  }
+}
+
+.content {
+  padding: 0 20px;
+
+  & h2 {
+    font-size: var(--font-l);
+    font-weight: var(--font-wight-l);
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  & span {
+    color: grey;
+  }
+
+  & article {
+    display: block;
+    margin-top: 20px;
+    font-style: italic;
+  }
+
+  p {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: var(--font-wight-l);
+    border-radius: 10px;
+    max-height: 50vh;
+    line-height: 1.4;
+
+    overflow-y: scroll;
+  }
+
+  @include CustomScrol(p);
+}

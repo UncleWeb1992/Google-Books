@@ -1,0 +1,9 @@
+@import "styles/mixins";
+
+.content {
+  padding: 20px;
+
+  @include Mobile {
+    padding: 10px;
+  }
+}

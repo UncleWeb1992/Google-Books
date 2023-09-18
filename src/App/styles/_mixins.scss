@@ -1,0 +1,39 @@
+@mixin Laptop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin MobieXl {
+  @media (max-width: 645px) {
+    @content;
+  }
+}
+
+@mixin Mobile {
+  @media (max-width: 580px) {
+    @content;
+  }
+}
+
+@mixin MobileS {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin CustomScrol($selector) {
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 30px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d85;
+    border-radius: 10px;
+  }
+}

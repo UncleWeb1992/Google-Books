@@ -1,0 +1,24 @@
+:root {
+  // Fonts
+  --font-family: Oswald, sans-serif;
+  --font-m: 14px;
+  --font-l: 18px;
+  --font-xl: 24px;
+  --font-wight-l: 500;
+  --font-weight-xl: 700;
+
+  // Sizes
+  --header-height: 200px;
+  --input-height: 40px;
+
+  //Z-index
+  --index-inputs: 1;
+  --index-top: 2;
+
+  //Helpers
+  --index: calc(1vh + 1vw);
+
+  //Colors
+  --green: rgb(2, 95, 2);
+  --green-light: rgb(67, 124, 67);
+}

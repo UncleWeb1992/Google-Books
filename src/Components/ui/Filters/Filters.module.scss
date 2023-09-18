@@ -1,0 +1,15 @@
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.select {
+  max-width: 400px;
+}
+
+.selectValue {
+  color: #fff;
+  text-transform: capitalize;
+}

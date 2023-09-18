@@ -1,0 +1,22 @@
+.button {
+  padding: 10px 20px;
+  background-color: var(--green);
+  font-size: var(--font-l);
+  color: white;
+  font-family: inherit;
+
+  border: 0;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background 0.2s linear;
+
+  &:hover {
+    background-color: var(--green-light);
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+}
