@@ -24,4 +24,4 @@ jobs:
       - name: build production project
         run: npm run build:prod
       - name: unit test
-        run: npm run test:unit
+        run: npm run unit
